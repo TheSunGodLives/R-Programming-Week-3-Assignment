@@ -35,3 +35,8 @@ cacheSolve <- function(x, ...) {
   x$setinverse(w)
   w
 }
+
+## Test example
+test <- makeCacheMatrix(matrix(1:4, 2, 2))
+test$get()
+cacheSolve(test)
